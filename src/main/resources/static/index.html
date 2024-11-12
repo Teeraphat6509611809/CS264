@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบฟอร์มการร้องขอเพิ่มและถอนรายวิชา</title>
+
+</head>
+
+<body>
+
+  <h1 class="head">แบบฟอร์มการร้องขอเพิ่มและถอนรายวิชา</h1>
+
+  <div class="crop">
+    <label for="date">วันที่:</label>
+    <input type="text" id="date" name="date" placeholder="DD/MM/YYYY" required>
+
+    <label for="studentTitle">คำนำหน้าชื่อ:</label>
+    <select name="studentTitle" id="studentTitle">
+      <option value="Mr.">นาย</option>
+      <option value="Mrs.">นาง</option>
+      <option value="Miss">นางสาว</option>
+
+    </select>
+
+
+    <label for="studentFirstName">ชื่อ:</label>
+    <input type="text" id="studentFirstName" name="studentFirstName" required>
+
+    <label for="studentLastName">นามสกุล:</label>
+    <input type="text" id="studentLastName" name="studentLastName" required>
+
+    <label for="studentID">รหัสนักศึกษา:</label>
+    <input type="text" id="studentID" name="studentID" required>
+
+    <label for="academic_year">ชั้นปีที่:</label>
+    <select name="academic_year" id="studentYear">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select>
+
+    <label for="studyField">สาขาวิชา:</label>
+    <input type="text" id="studyField" name="studyField" required>
+
+    <label for="advisor">อาจารย์ที่ปรึกษา:</label>
+    <input type="text" id="advisor" name="advisor" required>
+
+    <label for="moo">หมู่:</label>
+    <input type="text" id="moo" name="moo" required>
+
+    <label for="tumbol">ตำบล:</label>
+    <input type="text" id="tumbol" name="tumbol" required>
+
+    <label for="amphur">อำเภอ:</label>
+    <input type="text" id="amphur" name="amphur" required>
+
+    <label for="province">จังหวัด:</label>
+    <input type="text" id="province" name="province" required>
+
+    <label for="postalCode">รหัสไปรษณีย์:</label>
+    <input type="text" id="postalCode" name="postalCode" required>
+
+    <label for="mobilePhone">เบอร์โทรศัพท์มือถือ:</label>
+    <input type="text" id="mobilePhone" name="mobilePhone" required>
+
+    <label for="phone">เบอร์โทรศัพท์บ้าน:</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="cause">เหตุผลที่ร้องขอ:</label>
+    <input type="text" id="cause" name="cause" required>
+    <label for="add-course">เพิ่มรายวิชา</label>
+    <div class="form-group">
+      <label for="courseList">รายการวิชาที่จะขอเพิ่ม วิชาที่ 1 ถึง 10</label>
+      <div id="course-fields-container">
+        <button class="btn btn-outline-secondary btn-sm my-2" id="add-course" type="button" onclick="addCourseField()">
+          เพิ่มรายวิชาเพิ่ม
+        </button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="courseList">รายการวิชาที่จะขอถอน วิชาที่ 1 ถึง 10</label>
+      <div id="course-fields-container-withdraw">
+        <button class="btn btn-outline-secondary btn-sm my-2" id="withdraw-course" type="button"
+          onclick="withDrawCourseField()">
+          เพิ่มรายวิชาถอน
+        </button>
+
+      </div>
+    </div>
+    <button id="submit" onclick="collectData()">ส่งแบบฟอร์ม</button>
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

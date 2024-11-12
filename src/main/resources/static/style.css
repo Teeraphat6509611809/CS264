@@ -1,0 +1,88 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('img/bg_02.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #242424;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+}
+.crop{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #242424;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="date"] {
+    /* Remove the browser's default date picker arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Add a custom background and border */
+    background: #fff url('calendar-icon.png') no-repeat right center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 30px 10px 10px;
+}
+
+button {
+    background-color: #ff7700;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.bg{
+
+    height: 100%;
+    width: 100%;
+    
+}
+.blur {
+    filter: blur(5px);
+}
+
+h1 {
+    text-align: center;
+}
+.head{
+    color: azure;
+}
+
